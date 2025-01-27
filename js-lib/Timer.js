@@ -7,8 +7,7 @@ const
 export default class Timer
 {
 
-    constructor(runFn, interval)
-    {
+    constructor(runFn, interval) {
         js0.args(arguments, 'function', 'number');
 
         this._runFn = runFn;
@@ -25,13 +24,11 @@ export default class Timer
         this._ticksCount = 0;
     }
 
-    isRunning()
-    {
+    isRunning() {
         return this._running;
     }
 
-    start()
-    {
+    start() {
         if (this._running)
             return;
 
@@ -79,8 +76,7 @@ export default class Timer
         }, firstInterval);
     }
 
-    stop()
-    {
+    stop() {
         if (!this._running)
             return;
 

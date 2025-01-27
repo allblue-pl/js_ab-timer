@@ -14,13 +14,11 @@ class abTimer_Class
     }
 
 
-    constructor()
-    {
+    constructor() {
 
     }
 
-    start(runFn, interval)
-    {
+    start(runFn, interval) {
         js0.args(arguments, 'function', 'number');
 
         let t = new Timer(runFn, interval);
